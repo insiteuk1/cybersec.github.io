@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2: Security and Cryptography Revision Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Week 2: Concept of Cryptography</h1>
+        </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+        <!-- Concept of Cryptography Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Concept of Cryptography</h2>
+                <figure>
+                    <img src="../../public/sec/2/1.png" alt="Cryptography Concept" class="mx-auto">
+                    <!-- Make sure to provide the correct image path -->
+                    <figcaption class="text-center text-sm text-gray-400">Figure 2.1: Cryptography Concept</figcaption>
+                </figure>
+                <p class="mt-4">
+                    ➢ Problem Statement:<br>
+                    Alice and Bob want to exchange message M via an unsecure channel (public network, such as the Internet). An attacker C could understand and intercept the communication over this channel, but access to this communication should be secured so that the attacker should not be able to understand the communication.
+                </p>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+
+        <!-- Introduction to Cryptography Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Introduction</h2>
+                <h3 class="text-xl font-semibold">What is Cryptography</h3>
+                <p class="mt-4">
+                    Cryptography (Greek for “hidden, secret, and writing”) is the practice, evaluation, and analysis of approaches and techniques to establish security services, such as confidentiality, integrity, and authenticity within a communication environment to establish data security.
+                </p>
+                <h3 class="text-xl font-semibold">Symmetric Key Cryptography</h3>
+                <p class="mt-4">
+                    Symmetric Key Cryptography is a cryptographic method where a unique key is shared by both the sender and receiver. This key is used for both encryption and decryption of messages, ensuring that only the intended recipient can decrypt the message with the same key.
+                </p>
+                <h3 class="text-xl font-semibold">Asymmetric Key Cryptography</h3>
+                <p class="mt-4">
+                    Asymmetric Key Cryptography, on the other hand, involves separate keys for both the sender and receiver. One key, known as the public key, is used for encryption, while the other, the private key, is used for decryption. This method provides an added layer of security as the private key is kept secret, and only the public key is shared.
+                </p>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+
+        <!-- Symmetric Key Cryptography Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Symmetric Key Cryptography</h2>
+                <figure>
+                    <img src="../../public/sec/2/2.png" alt="Symmetric Key Cryptography Diagram" class="mx-auto">
+                    <figcaption class="text-center text-sm text-gray-400">Figure 2: Symmetric Key Cryptography</figcaption>
+                </figure>
+                <p class="mt-4">
+                    Symmetric Key Cryptography is a fundamental cryptographic method where a single, shared key is used for both encryption and decryption of messages. The sender and receiver must possess the same key for secure communication. When a message needs to be sent securely, the sender uses this key to encrypt the plaintext into ciphertext. The ciphertext is then transmitted over an insecure channel (e.g., the internet) and can only be decrypted by the recipient using the same shared key. Symmetric key cryptography is known for its efficiency, especially when dealing with large amounts of data, but it necessitates that both parties securely share and maintain the secrecy of the key.
+                </p>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+        
+        <!-- Cryptanalysis Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Cryptanalysis</h2>
+                <p class="mt-4">
+                    Cryptanalysis is the practice and study of complex statistical and mathematical techniques used to obtain meaningful information about the ciphertext or encrypted message. It involves various methods and approaches to analyze and break cryptographic systems. In practice, it is crucial never to use an untested cryptosystem, as affirmed by Kerckhoff's Principle (1883).
+                </p>
+                <p class="mt-4">
+                    Kerckhoff's Principle states that a cryptosystem should preserve its security properties even if everything about the cryptosystem, including encryption and decryption algorithms, is made public, provided the secret key is kept securely. This principle emphasizes the importance of relying on the secrecy of the key rather than the secrecy of the algorithm. It encourages the use of well-established and thoroughly tested cryptographic systems to ensure security.
+                </p>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+
+        <!-- Cryptosystem Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Cryptosystem</h2>
+                <p class="mt-4">
+                    A cryptosystem is a fundamental concept in cryptography, consisting of a 5-tuple represented as (E, D, M, K, C), where each component plays a crucial role in secure communication.
+                </p>
+                <p class="mt-4">
+                    The components of a cryptosystem are as follows:
+                </p>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>M: The set of plaintexts</li>
+                    <li>K: The set of keys</li>
+                    <li>C: The set of ciphertexts</li>
+                    <li>E: The encryption algorithm, denoted as E: M × K ⇒ C</li>
+                    <li>D: The decryption algorithm, denoted as D: C × K ⇒ M</li>
+                </ul>
+                <p class="mt-4">
+                    Cryptosystems are designed to provide security services, such as confidentiality, integrity, and authenticity, within a communication environment to establish data security. Understanding the components and operations of a cryptosystem is essential for ensuring secure communication.
+                </p>
+                <p class="mt-4">
+                    Two basic properties should be established in a cryptosystem:
+                </p>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>Correctness Property: When a secret key, K, is used to encrypt a message, M, with an encryption algorithm producing a ciphertext, C, the decryption algorithm with the same key, K, should give back the original message, M.</li>
+                    <li>Secrecy Property: The ciphertext, C, should not reveal any information about the key and the original message, M.</li>
+                </ul>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+
+        <!-- Substitution Cipher Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Substitution Cipher</h2>
+                <p class="mt-4">
+                    The Substitution Cipher, also known as the monoalphabetic substitution cipher, is a classic encryption technique that operates on letters within a plaintext message. It involves a one-to-one mapping of each plaintext letter to a fixed ciphertext letter.
+                </p>
+                <p class="mt-4">
+                    For example, if the letter 'A' in the plaintext is mapped to the letter 'D' in the ciphertext, every occurrence of 'A' in the message is replaced with 'D'.
+                </p>
+                <figure class="mt-4">
+                    <img src="../../public/sec/2/3.png" alt="Substitution Cipher Diagram" class="mx-auto">
+                    <figcaption class="text-center text-sm text-gray-400">Figure X.X: Substitution Cipher Diagram</figcaption>
+                </figure>
+                <p class="mt-4">
+                    The Substitution Cipher is a historical encryption method, but it raises questions about its security. The main concerns include:
+                </p>
+                <ul class="mt-4 list-disc list-inside">
+                    <li>Is the cipher secure?</li>
+                    <li>How can we attack the cipher?</li>
+                </ul>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+
+        <!-- Substitution Cipher Attack Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Substitution Cipher Attack</h2>
+                <p class="mt-4">
+                    The Substitution Cipher, while seemingly secure at first glance, is susceptible to several cryptographic attacks. Here are some common attack methods:
+                </p>
+                <ul class="mt-4 list-disc list-inside">
+                    <li><strong>Exhaustive Key Search (Brute-Force Attack):</strong> Attackers can attempt every possible substitution table (each table is a key) until an intelligible plaintext message appears. However, this approach becomes infeasible due to the vast key space.</li>
+                    <li><strong>Letter Frequency Analysis Attack:</strong> This attack relies on the inherent characteristics of the English language, such as the frequency of letter occurrence. For example, the letter 'E' occurs most frequently, followed by 'T' and 'A'. Attackers can exploit the preservation of letter frequency from plaintext to ciphertext to decipher the message.</li>
+                </ul>
+                <p class="mt-4">
+                    Letter frequency analysis is a powerful tool in cryptanalysis because it leverages the following knowledge about English text:
+                </p>
+                <figure class="mt-4">
+                    <img src="../../public/sec/2/4.png" alt="Letter Frequency Analysis Chart" class="mx-auto">
+                    <figcaption class="text-center text-sm text-gray-400">Figure X.X: Letter Frequency Analysis Chart</figcaption>
+                </figure>
+                <p class="mt-4">
+                    Frequency of Single Letter Words in Ascending Order:
+                </p>
+                <table class="w-full mt-4 border border-gray-400">
+                    <thead>
+                        <tr class="bg-gray-600 text-white">
+                            <th class="py-2 px-4">Letters</th>
+                            <th class="py-2 px-4">Frequency in %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Insert table rows for letter frequency -->
+                    </tbody>
+                </table>
+                <p class="mt-4">
+                    Most common two-letter words, as well as three-letter words, in order of their occurrences, can also be analyzed to gain insights into the substitution cipher.
+                </p>
+            </article>
+            <!-- Additional sections and explanations as needed -->
+        </section>
+
+        <!-- Substitution Cipher (Caesar Cipher) Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Substitution Cipher (Caesar Cipher)</h2>
+                <p class="mt-4">
+                    The Caesar cipher is one of the simplest approaches to encryption, and it operates by shifting every character in the plaintext a fixed number of positions to the right. This fixed number, denoted as 'k,' represents the key of the cipher. Let's explore how it works:
+                </p>
+                <p class="mt-4">
+                    <strong>Example:</strong>
+                    <br>
+                    Plain Text: SECURITY AND CRYPTOGRAPHY
+                    <br>
+                    Ciphertext: bnldarch= 1 13 11 3 0 17 2 7
+                </p>
+                <p>
+                    In this example, the key 'k' is 9, which means that each letter in the plaintext is shifted nine positions to the right in the alphabet. Note that the letters "wrap around" at the end of the alphabet, which can be mathematically expressed as a reduction modulo 26. For instance, 18 + 9 = 27 ≡ 1 mod 26.
+                </p>
+                <img src="../../public/sec/2/6.png" alt="Caesar Cipher Diagram" class="mx-auto mt-4">
+                <figcaption class="text-center text-sm text-gray-400">Figure 2.3: Caesar Cipher</figcaption>
+            </article>
+        </section>
+
+        <!-- Modulo Arithmetic Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Modulo Arithmetic (and a clock)</h2>
+                <p class="mt-4">
+                    Modulo Arithmetic is a fundamental concept in cryptography, especially for computations within finite sets. It involves the use of a modulus to perform operations that wrap around when a certain value is reached. Let's explore this concept using a clock as an example.
+                </p>
+                <h3 class="text-xl font-semibold mt-4">Goal</h3>
+                <p>
+                    The goal of Modulo Arithmetic is to perform computations within finite sets. To illustrate this concept, consider an example with a finite set of integers. Imagine a clock with 12 integers, which allows us to introduce the idea of modular arithmetic. In this case, the clock is modulo 12, meaning it wraps around after reaching 12.
+                </p>
+                <h3 class="text-xl font-semibold mt-4">Modular Arithmetic</h3>
+                <p>
+                    In its simplest form, modulus is essentially the remainder from division. For example, if we divide 14 by 6, the result is 2 with a remainder of 2. In modular arithmetic:
+                </p>
+                <ul class="mt-4 list-disc list-inside">
+                    <li><strong>0 mod 3 = 0</strong></li>
+                    <li><strong>2 mod 3 = 2</strong></li>
+                    <li><strong>7 mod 7 = 0</strong></li>
+                    <li><strong>15 mod 10 = 5</strong></li>
+                </ul>
+                <p class="mt-4">
+                    In general, for two positive numbers 'a' and 'n,' 'a modulo n' (abbreviated as 𝑎 𝑚𝑜𝑑 𝑛) is the remainder of the division of 'a' by 'n,' where 'a' is the dividend and 'n' is the divisor. Modulo arithmetic is crucial for various cryptographic operations and computations within finite sets.
+                </p>
+            </article>
+        </section>
+
+        <!-- Caesar Cipher Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Caesar Cipher</h2>
+                <p class="mt-4">
+                    The Caesar Cipher can be represented in the form of modulo expressions with keys 'k,' plaintext 'm,' and ciphertext 'c' belonging to the set {0, 1, …, 25}. The encryption and decryption processes are defined as follows:
+                </p>
+                <p class="mt-4"><strong>Encryption:</strong></p>
+                <p class="ml-6">c = ek(m) = (m + k) mod 26</p>
+                <p class="mt-4"><strong>Decryption:</strong></p>
+                <p class="ml-6">m = dk(c) = (c - k) mod 26</p>
+                <p class="mt-4">In these expressions, 'k' represents the key, 'm' is the plaintext, and 'c' is the ciphertext. The modulo operation ensures that the result falls within the range of 0 to 25, corresponding to the 26 letters of the alphabet.</p>
+                <h3 class="text-xl font-bold mt-4">Attack on Caesar Cipher</h3>
+                <p class="mt-4">The Caesar Cipher, despite its simplicity, is vulnerable to various attacks:</p>
+                <ul class="list-disc ml-6">
+                    <li><strong>Brute Force Attack or Exhaustive Key Search:</strong></li>
+                    <p class="mt-2">This attack involves trying all possible 26 keys until meaningful text is revealed. Since there are only 26 possible keys, it's a straightforward attack.</p>
+                    <li><strong>Letter Frequency Analysis:</strong></li>
+                    <p class="mt-2">Similar to the frequency attack in substitution cipher, this method relies on the frequency distribution of letters in the English language to identify the key and decrypt the message.</p>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Dictionary Attack Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Dictionary Attack</h2>
+                <p class="mt-4"><strong>Rule:</strong></p>
+                <ul class="list-disc ml-6">
+                    <li>First letter in a word becomes A</li>
+                    <li>Second letter becomes B</li>
+                    <li>Letter repeated occurrences in the plaintext use the same letter</li>
+                </ul>
+                <p class="mt-4"><strong>Example:</strong></p>
+                <ul class="list-disc ml-6">
+                    <li>HELLO → ABCCD</li>
+                    <li>CELLS → ABCCD</li>
+                    <li>SPEAKER → ABCDECF</li>
+                    <li>ELEPHANT → ABACDEFG</li>
+                    <li>FOOTBALL → ABBCDEFF</li>
+                </ul>
+                <p class="mt-4">In a Dictionary Attack, the plaintext is transformed into a sequence of letters based on the rules mentioned above. For example, the word "HELLO" is transformed into "ABCCD." This transformation is applied to the entire plaintext message.</p>
+                <h3 class="text-xl font-bold mt-4">Searching Dictionary</h3>
+                <p class="mt-4">To perform a Dictionary Attack, we need to search a dictionary for words where the transformed pattern matches the given sequence. Here's how it works:</p>
+                <p class="mt-4"><strong>Given Pattern:</strong></p>
+                <p class="ml-6">X L N K O R X Z G R L M</p>
+                <p class="mt-4">We know:</p>
+                <ul class="list-disc ml-6">
+                    <li>1st letter = 7th</li>
+                    <li>2nd letter = 11th</li>
+                    <li>And so on...</li>
+                </ul>
+                <p class="mt-4">But how can we use this information?</p>
+                <h3 class="text-xl font-bold mt-4">Converting Word Patterns</h3>
+                <p class="mt-4">To search the dictionary effectively, we convert word patterns to a string so that they remain the same regardless of whether there is substitution or not. This allows us to perform efficient searches in the dictionary.</p>
+                <p class="mt-4"><strong>Example:</strong></p>
+                <p class="ml-6">X L N K O R X Z G R L M → A B C D E F A G H F B I</p>
+            </article>
+        </section>
+
+        <!-- Caveats Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Caveats</h2>
+                <p class="mt-4">When using dictionary attacks, there are certain caveats to consider:</p>
+                <ul class="list-disc ml-6">
+                    <li>Often resolves to several words</li>
+                    <li>Longer words are better</li>
+                    <li>Word may not be in the dictionary</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Summary</h2>
+                <p class="mt-4">In summary, here are some key points to remember:</p>
+                <ul class="list-disc ml-6">
+                    <li>You should not create your own cryptographic system without an experienced team of cryptanalysts exploring any flaws within the design.</li>
+                    <li>To establish reliable and secure communication, never use an untested crypto algorithm.</li>
+                    <li>While some attacks may not be possible on certain crypto algorithms, certain attacks, like letter frequency attacks on substitution ciphers, are inevitable.</li>
+                    <li>Modular arithmetic is an important concept for representing historical encryption schemes, such as the Caesar cipher.</li>
+                    <li>Dictionary attacks can aid in deciphering a ciphertext produced from a substitution cipher faster.</li>
+                </ul>
+            </article>
+        </section>
+
+
+    </main>
+</body>
+</html>

@@ -1,2 +1,0 @@
-# cybersec.github.io
-T

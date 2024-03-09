@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3: Ethical Hacking - Exploitation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <header class="bg-green-900 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Week 3: Exploitation</h1>
+        </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+        <section class="space-y-6">
+            <!-- Vulnerability Scanning Section -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Vulnerability Scanning</h2>
+                <p>This section delves into the critical process of vulnerability scanning in ethical hacking. It involves a comprehensive assessment to identify potential vulnerabilities in a system or network.</p>
+                <!-- Image for Vulnerability Scanning -->
+                <div class="mt-4">
+                    <img src="../../public/ethical/3/1.png" alt="Vulnerability Scanning" class="rounded-lg shadow-lg"/>
+                </div>
+                <ul class="list-disc pl-5 mt-4">
+                    <li><strong>Port and Directory Scans:</strong> Scanning for open ports and directories to identify potential entry points.</li>
+                    <li><strong>Banner Grabbing:</strong> Collecting information from network services to determine software versions and types.</li>
+                    <li><strong>Identifying Services:</strong> Determining the services running on open ports for potential vulnerabilities.</li>
+                    <li><strong>Checking for Confidential Files:</strong> Searching for unprotected or sensitive files that could be exploited.</li>
+                    <li><strong>Misconfigurations:</strong> Identifying improper configurations that could lead to security breaches.</li>
+                    <li><strong>Subtle Testing:</strong> Conducting non-intrusive tests to assess the security without triggering alarms.</li>
+                    <li><strong>Software and Services Version Checks:</strong> Comparing identified software and service versions against known vulnerability databases.</li>
+                </ul>
+            </article>
+
+            <!-- Vulnerability Scanners Section -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Vulnerability Scanners</h2>
+                <p>Vulnerability scanners are crucial tools in ethical hacking, automating the processes of manual testing and database searches. Some scanners are even capable of exploiting vulnerabilities. This section introduces various vulnerability scanners, both open-source and commercial.</p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li><strong>Nikto:</strong> A web server scanner for quick identification of basic HTTP vulnerabilities.</li>
+                    <li><strong>Nmap:</strong> Not just for network mapping; it can also scan for vulnerabilities.</li>
+                    <li><strong>OpenVAS:</strong> An open-source centralized vulnerability scanning and management tool, regularly updated.</li>
+                    <li><strong>Metasploit:</strong> Known for its exploitation capabilities, it also assists in vulnerability scanning.</li>
+                    <li><strong>OWASP ZAP Scanner:</strong> A tool focused on finding vulnerabilities in web applications.</li>
+                    <li><strong>Nexpose:</strong> A commercial vulnerability scanner with extensive capabilities.</li>
+                    <li><strong>Nessus:</strong> A widely-used commercial scanner, known for its extensive operating system and infrastructure coverage, including cloud environments.</li>
+                    <li><strong>Other Commercial Tools:</strong> Such as Qualys and Tenable, offering a range of scanning and vulnerability management features.</li>
+                </ul>
+            </article>
+
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">TOOLS</h2>
+                <p>This section provides an overview of various tools used in different areas of ethical hacking, each serving a specific purpose in the exploitation process.</p>
+        
+                <!-- CMS Tools -->
+                <h3 class="text-xl font-semibold mt-4">CMS</h3>
+                <p>Tools specifically designed for content management systems like WordPress and Joomla.</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>WPscan:</strong> A WordPress vulnerability scanner.</li>
+                    <li><strong>Joomscan:</strong> A Joomla vulnerability scanner.</li>
+                </ul>
+        
+                <!-- Crawlers & Directory Scanning Tools -->
+                <h3 class="text-xl font-semibold mt-4">Crawlers & Directory Scanning</h3>
+                <p>Tools to automate the discovery of directories and files on web servers.</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>Dirbuster:</strong> Directory brute-forcing to find hidden paths.</li>
+                    <li><strong>Gobuster:</strong> A tool used to brute-force URIs including directories and files as well as DNS subdomains.</li>
+                </ul>
+        
+                <!-- Proxies -->
+                <h3 class="text-xl font-semibold mt-4">Proxies</h3>
+                <p>Tools that allow for the interception, review, and modification of web requests.</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>Burp Suite:</strong> An integrated platform for performing security testing of web applications.</li>
+                    <li><strong>TamperChrome:</strong> A browser extension for Google Chrome allowing to tamper with HTTP requests.</li>
+                </ul>
+        
+                <!-- Enumeration Tools -->
+                <h3 class="text-xl font-semibold mt-4">Enumeration Tools</h3>
+                <p>Tools for gathering information about networked systems and services.</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>enum4linux:</strong> A tool for enumerating information from Windows and Samba systems.</li>
+                    <li><strong>DNSEnum:</strong> For enumerating DNS information.</li>
+                    <li><strong>SNMPwalk:</strong> Used for SNMP network discovery.</li>
+                    <li><strong>smtp-user-enum:</strong> User enumeration tool for SMTP.</li>
+                    <li><strong>smbmap:</strong> Allows users to enumerate samba share drives across an entire domain.</li>
+                </ul>
+        
+                <!-- Fuzzing and Stress Testing -->
+                <h3 class="text-xl font-semibold mt-4">Fuzzing and Stress Testing</h3>
+                <p>Tools for testing the robustness of software by providing random data ("fuzzing") and assessing how it handles high loads ("stress testing").</p>
+                <p>For a comprehensive list of fuzzing and stress testing tools, visit the Kali Linux Menu.</p>
+        
+                <!-- Explore the Kali Linux Menu -->
+                <h3 class="text-xl font-semibold mt-4">Explore the Kali Linux Menu</h3>
+                <p>Kali Linux offers a wide array of tools for penetration testing. Exploring its menu will provide insights into the tools available for various hacking needs.</p>
+            </article>
+
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Vulnerability Identification</h2>
+                <p>This section explores the challenges and methodologies in identifying vulnerabilities, focusing on the trusted input problem and various types of common vulnerabilities.</p>
+        
+                <!-- The Trusted Input Problem -->
+                <h3 class="text-xl font-semibold mt-4">The Trusted Input Problem</h3>
+                <p>Understanding the nature of the input is crucial in cybersecurity. This involves determining whether the input is data or code and whether it behaves as expected. Software often relies on interaction with users or other applications, leading to potential vulnerabilities if the input is not properly validated.</p>
+        
+                <!-- Common Vulnerabilities -->
+                <h3 class="text-xl font-semibold mt-4">Common Vulnerabilities</h3>
+                <p>A range of common vulnerabilities arises from the mishandling of input:</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>SQL Injection:</strong> Involves adding malicious SQL queries into input fields to manipulate or exploit database systems.</li>
+                    <li><strong>Stack Buffer Overflow:</strong> Occurs when data exceeds the buffer's boundary and overwrites adjacent memory locations. This can be exploited to redirect the next instruction in a program.</li>
+                    <li><strong>Shell Code Injection:</strong> A method of exploiting vulnerabilities in a program to execute arbitrary commands or code.</li>
+                    <li><strong>File Inclusion:</strong> The inclusion of files through vulnerabilities, often leading to remote code execution or disclosure of sensitive information.</li>
+                    <li><strong>Cross-Site Scripting (XSS):</strong> A vulnerability that allows attackers to inject malicious scripts into webpages viewed by other users.</li>
+                </ul>
+            </article>
+
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Vulnerability Identification</h2>
+                <p>This section delves into the methodologies used in the identification of vulnerabilities, including various techniques and approaches to discover and exploit vulnerabilities in systems.</p>
+        
+                <!-- Methodology -->
+                <h3 class="text-xl font-semibold mt-4">Methodology</h3>
+                <p>The process of identifying vulnerabilities typically involves several key steps:</p>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>Find Injection Points:</strong> Identifying potential points where malicious data can be injected.</li>
+                    <li><strong>OSINT, Google Dorking:</strong> Using open-source intelligence and advanced search techniques to gather information.</li>
+                    <li><strong>Port Scanning, Enumeration:</strong> Scanning ports and enumerating services and software to identify potential vulnerabilities.</li>
+                    <li><strong>Directory Scanning, API Scanning:</strong> Discovering directories and APIs that might be vulnerable to attacks.</li>
+                    <li><strong>Fuzzing:</strong> Providing random or unexpected inputs to software to discover vulnerabilities.</li>
+                    <li><strong>Testing:</strong> Conducting various tests to exploit discovered vulnerabilities.</li>
+                    <li><strong>Exploit:</strong> Utilizing identified vulnerabilities to gain unauthorized access or perform unauthorized actions.</li>
+                </ul>
+        
+                <article class="bg-gray-700 p-6 rounded-lg shadow">
+                    <h2 class="text-2xl font-bold mb-3">Software Exploitation Techniques</h2>
+                    <p>Exploring various techniques used in the exploitation of software vulnerabilities:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li><strong>Fuzzing:</strong> Providing invalid, unexpected, or random data to the inputs of a program.</li>
+                        <li><strong>Function Analysis:</strong> Examining software functions for potential vulnerabilities.</li>
+                        <li><strong>Weak/Insecure Credential Storage:</strong> Exploiting poor practices in storing credentials.</li>
+                        <li><strong>Weak Security Design:</strong> Taking advantage of flaws in the design of security systems.</li>
+                        <li><strong>Input Validation:</strong> Testing how software handles various forms of input, particularly malicious data.</li>
+                        <li><strong>Memory Analysis:</strong> Inspecting memory usage and handling to identify vulnerabilities.</li>
+                        <li><strong>Reverse Engineering:</strong> Analyzing software to understand its design, architecture, and code.</li>
+                        <li><strong>Tools:</strong> Utilizing tools like IDA, GDB, hex viewers, and ODB for exploitation.</li>
+                    </ul>
+                </article>
+
+                <article class="bg-gray-700 p-6 rounded-lg shadow">
+                    <h2 class="text-2xl font-bold mb-3">Shellcode</h2>
+                    <p>A deep dive into shellcode, a fundamental element in software exploitation:</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li><strong>Definition:</strong> A set of instructions executed after an exploit to gain shell access.</li>
+                        <li><strong>Types:</strong> Includes bind shells, reverse shells, GUI or CLI based shells.</li>
+                        <li><strong>Characteristics:</strong> Often written in Assembly due to its direct access to memory and system functions.</li>
+                        <li><strong>Injection:</strong> Commonly injected within input, especially in buffer overflow attacks.</li>
+                        <li><strong>Language:</strong> Can be written in any programming language, though Assembly is common.</li>
+                    </ul>
+                </article>
+
+                <article class="bg-gray-700 p-6 rounded-lg shadow">
+                    <h2 class="text-2xl font-bold mb-3">Key Concepts in Software Exploitation</h2>
+                    <p>This section covers fundamental concepts essential in understanding software exploitation:</p>
+                    
+                    <ul class="list-disc pl-5 mt-2">
+                        <li><strong>Auxiliary Modules:</strong> Include tools like port scanners, fuzzers, and sniffers. They are used for reconnaissance and do not send a payload.</li>
+                        <li><strong>Exploit Modules:</strong> Modules that actively exploit a vulnerability and often use payloads.</li>
+                        <li><strong>Payload:</strong> Code that runs remotely on the victim's system post-exploitation. Can be a single-full (non-staged) or a staged payload, including shells, malware, keyloggers, backdoors, RATS, etc.</li>
+                        <li><strong>Meterpreter:</strong> A sophisticated, two-staged payload often used in Metasploit.</li>
+                        <li><strong>Stager:</strong> Establishes a communication channel between the attacker and the victim and loads the main payload on the target system.</li>
+                        <li><strong>Shellcode:</strong> A payload that initiates a shell, allowing command execution on the target system. It can be written in various languages, often in Assembly.</li>
+                        <li><strong>Shell:</strong> A user interface for system interaction and command execution, such as Bash Shell (/bin/bash).</li>
+                        <li><strong>Bind Shell:</strong> A shell that binds to a specific port on the target and waits for incoming connections.</li>
+                        <li><strong>Reverse Shell:</strong> A shell that initiates a connection back to the attacker's specified IP address and port.</li>
+                        <li><strong>Dynamic Payloads:</strong> Designed to evade anti-malware defenses by generating unique payloads each time.</li>
+                        <li><strong>Static Payloads:</strong> Use static IP address/port for consistent communication between the attacker and the target system.</li>
+                        <li><strong>Encoders:</strong> Used to modify payload encoding to avoid detection and ensure payload delivery.</li>
+                        <li><strong>Nops:</strong> Used to maintain consistent payload sizes across different exploit attempts, often as part of a NOP sled in buffer overflow attacks.</li>
+                    </ul>
+                </article>
+
+        </section>
+    </main>
+</body>
+</html>

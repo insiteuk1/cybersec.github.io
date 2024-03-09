@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISS Revision Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Function to toggle dropdown visibility
+      function toggleDropdown(id) {
+        document.getElementById(id).classList.toggle('hidden');
+      }
+    </script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-blue-800 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Business Information Security Systems (BISS)</h1>
+            <!-- Key Information Area -->
+            <div class="mt-4 p-4 bg-blue-700 rounded-lg">
+                <h2 class="text-lg font-semibold">General Information</h2>
+                <!-- Information items -->
+                <p>Key exam dates, resources, and additional information go here.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8 p-4">
+    
+        <section>
+            <article class="bg-gray-800 shadow rounded-lg p-6">
+                <h3 class="font-semibold text-xl mb-4">Resources</h3>
+                <div class="space-y-2">
+                    <a href="../../public/biss/BISS%20Module%20Assessment%202023-2024.pdf" target="_blank" class="block bg-blue-600 hover:bg-blue-700 font-bold py-2 px-4 rounded">BISS Module Assessment 2023-2024</a>
+                    <a href="../../public/biss/BISS%20Unit%20Schedule%202023-2024.pdf" target="_blank" class="block bg-blue-600 hover:bg-blue-700 font-bold py-2 px-4 rounded">BISS Unit Schedule 2023-2024</a>
+                    <a href="../../public/biss/BUSINESS%20INFORMATION%20SYSTEMS%20SECURITY%20Unit%20Booklet%202023-2024.pdf" target="_blank" class="block bg-blue-600 hover:bg-blue-700 font-bold py-2 px-4 rounded">BUSINESS INFORMATION SYSTEMS SECURITY Unit Booklet 2023-2024</a>
+                    <a href="https://immersivelabs.online/signin?click=website_nav" target="_blank" class="block bg-blue-600 hover:bg-blue-700 font-bold py-2 px-4 rounded">Immersive Labs</a>
+                </div>
+            </article>
+        </section>
+        
+
+        <section>
+            <h2 class="text-2xl font-bold mb-2 text-center">Weekly Topics</h2>
+            <div class="space-y-4">
+                <!-- Repeat this block for each week -->
+                <article class="bg-gray-800 shadow rounded-lg p-6">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-xl">Week 1: Introduction to BISS and handling Risk</h3>
+                        <!-- Dropdown toggle button -->
+                        <button onclick="toggleDropdown('dropdown-week1')" class="text-blue-400 hover:text-blue-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Dropdown content -->
+                    <div id="dropdown-week1" class="hidden mt-2">
+                        <p>This week we will have a brief introduction to the unit, assessments, and activities. The lecture will concentrate on Corporate Security management and Risk management approaches. Seminars will cover activities related to the lectures.</p>
+                        <a href="week1/index.html" class="mt-2 inline-block bg-blue-600 hover:bg-blue-700 font-bold py-2 px-4 rounded">Go to Week 1</a>
+                        <a href="week1/seminar.html" class="mt-2 inline-block bg-blue-600 hover:bg-blue-700 font-bold py-2 px-4 rounded">Seminar Activity</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

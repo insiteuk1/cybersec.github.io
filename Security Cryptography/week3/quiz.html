@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Quiz: Polyalphabetic Substitution Ciphers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Week 3 Quiz: Polyalphabetic Substitution Ciphers</h1>
+        </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+        <form>
+            <!-- Question 1 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">1. What is the main weakness of monoalphabetic substitution ciphers?</p>
+                <label class="block mb-2"><input type="radio" name="question1" value="correct"> Each letter in the ciphertext corresponds to only one letter in the plaintext, making it vulnerable to letter frequency attacks.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> They use multiple keys for encryption.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> They are resistant to frequency analysis.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> They use modular arithmetic.</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">2. Which cipher is a type of polyalphabetic substitution cipher?</p>
+                <label class="block mb-2"><input type="radio" name="question2" value="correct"> Vigenère Cipher</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> Caesar Cipher</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> Transposition Cipher</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> Permutation Cipher</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">3. How is the key stream generated in the Vigenère Cipher?</p>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> It is generated using modular arithmetic.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> It is the same for every character in the plaintext.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="correct"> It uses a keyword to generate a key stream.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> It is randomly generated.</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">4. In the Vigenère Cipher, how is a letter of the plaintext encrypted?</p>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> It is replaced by a letter from a different alphabet.</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="correct"> It is encrypted by adding the corresponding key letter using modular arithmetic.</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> It is encrypted using the previous letter as the key.</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> It is encrypted using a fixed key from a table.</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">5. What is the primary advantage of the Vigenère Cipher over monoalphabetic substitution ciphers?</p>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> It has a shorter key.</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="correct"> It introduces variability through the key, making it resistant to frequency analysis attacks.</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> It is faster for encryption and decryption.</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> It encrypts the entire message at once.</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">6. What is the key space of a Vigenère Cipher with a keyword of length 5, using only uppercase letters?</p>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> 26</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> 25</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> 260</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="correct"> 26^5</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">7. Who is credited with the invention of the Vigenère Cipher?</p>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Julius Caesar</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="correct"> Blaise de Vigenère</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Thomas Jefferson</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Alan Turing</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">8. What is the process of decrypting a Vigenère Cipher called?</p>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> Substitution</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="correct"> Decipherment</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> Transposition</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> Encryption</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">9. What is the term for an attack that attempts to discover the key of a Vigenère Cipher by analyzing the repeating patterns in the ciphertext?</p>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> Frequency Analysis Attack</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> Brute Force Attack</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> Caesar Attack</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="correct"> Kasiski Examination</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">10. What is the primary objective of the Kasiski Examination?</p>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To find the frequency of letters in the ciphertext.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="correct"> To identify repeating patterns in the ciphertext to determine the length of the keyword.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To decrypt the entire ciphertext without knowing the keyword.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To create a new encryption algorithm.</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()" class="mt-4 bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">Submit Quiz</button>
+        </form>
+        <div id="result" class="hidden mt-4 p-4 bg-purple-700 rounded">
+            <p class="text-xl" id="scoreText"></p>
+        </div>
+    </main>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const totalQuestions = 10;
+            // Check each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const question = document.querySelector(`input[name="question${i}"]:checked`);
+                if (question && question.value === "correct") {
+                    score++;
+                }
+            }
+            // Calculate percentage
+            const scorePercent = (score / totalQuestions) * 100;
+            // Display result
+            document.getElementById('scoreText').innerText = `Your score is: ${scorePercent.toFixed(2)}%`;
+            document.getElementById('result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

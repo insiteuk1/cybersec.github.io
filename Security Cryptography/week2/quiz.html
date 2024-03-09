@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security and Cryptography Quiz Week 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Security and Cryptography Quiz Week 2</h1>
+        </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">1. What is the main vulnerability of the Electronic Codebook (ECB) mode of encryption?</p>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> It uses multiple keys for encryption.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="correct"> It reveals patterns in plaintext.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> It is computationally intensive.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> It does not use an initialization vector (IV).</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">2. What is the primary advantage of the Advanced Encryption Standard (AES) over older encryption algorithms like DES?</p>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> AES is faster in execution.</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> AES allows multiple encryption modes.</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="correct"> AES is more secure against cryptographic breaks.</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> AES uses smaller key sizes for efficiency.</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">3. What do Substitution-Permutation Networks (SPNs) primarily provide in block cipher algorithms?</p>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> Data compression.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="correct"> Confusion and diffusion.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> Key generation and management.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> Error correction capabilities.</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">4. What does the Cipher Block Chaining (CBC) mode use to make each ciphertext block depend on all plaintext blocks processed up to that point?</p>
+                <label class="block mb-2"><input type="radio" name="question4" value="correct"> XORing each plaintext block with the previous ciphertext block.</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> Using a different key for each block.</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> Reversing the order of block processing.</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> Applying a unique permutation to each block.</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">5. In Cryptography, what does the term 'confusion' refer to?</p>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> Making the algorithm faster.</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="correct"> Obscuring the relationship between the ciphertext and the symmetric key.</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> Rearranging the bits in the ciphertext.</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> Encrypting the data in multiple rounds.</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">6. In the context of Asymmetric Key Encryption, what is the purpose of the public key?</p>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> It is used to decrypt the received message.</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="correct"> It is used to encrypt the plaintext.</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> It generates the private key.</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> It signs digital certificates.</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">7. What is the main mathematical challenge upon which the security of RSA cryptography is based?</p>
+                <label class="block mb-2"><input type="radio" name="question7" value="correct"> Factoring the product of two large prime numbers.</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Solving complex exponential equations.</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Calculating large modular exponentiations.</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Performing the extended Euclidean algorithm.</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">8. What is the purpose of an Initialization Vector (IV) in CBC mode?</p>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> It serves as the key for encryption and decryption.</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="correct"> It ensures that identical plaintext blocks encrypt differently.</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> It compresses the data before encryption.</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> It makes the algorithm run faster.</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">9. What is the key feature of a Digital Signature?</p>
+                <label class="block mb-2"><input type="radio" name="question9" value="correct"> It verifies the authenticity and integrity of a message.</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> It encrypts the entire message.</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> It reveals the private key of the sender.</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> It decrypts the message for the recipient.</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">10. What is the primary purpose of a Public Key Infrastructure (PKI)?</p>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To keep encryption keys secret at all times.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="correct"> To manage digital certificates and provide a secure communication environment.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To encrypt messages with a public key.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To perform mathematical operations for encryption.</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()" class="mt-4 bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">Submit Quiz</button>
+        </form>
+        <div id="result" class="hidden mt-4 p-4 bg-purple-700 rounded">
+            <p class="text-xl" id="scoreText"></p>
+        </div>
+    </main>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const totalQuestions = 10;
+            // Check each question
+            for (let i = 1; i <= totalQuestions; i++) {
+                const question = document.querySelector(`input[name="question${i}"]:checked`);
+                if (question && question.value === "correct") {
+                    score++;
+                }
+            }
+            // Calculate percentage
+            const scorePercent = (score / totalQuestions) * 100;
+            // Display result
+            document.getElementById('scoreText').innerText = `Your score is: ${scorePercent.toFixed(2)}%`;
+            document.getElementById('result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

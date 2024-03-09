@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5: Ethical Hacking - Privilege Escalation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <header class="bg-green-900 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Week 5: Privilege Escalation</h1>
+        </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+        <section class="space-y-6">
+            <!-- Privilege Escalation Overview -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Privilege Escalation Overview</h2>
+                <p>Privilege escalation is a critical aspect of ethical hacking, involving the elevation of user privileges to gain unauthorized access to systems or sensitive information. Understanding different techniques and methods is crucial for identifying and mitigating potential vulnerabilities.</p>
+                <p>Privilege escalation can occur at various levels, including local privilege escalation on a single system and vertical privilege escalation, where an attacker gains access to higher-level privileges.</p>
+            </article>
+
+            <!-- Local Privilege Escalation -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Local Privilege Escalation</h2>
+                <p>Local privilege escalation involves exploiting vulnerabilities to elevate privileges on a single system. Common techniques include:</p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li><strong>Kernel Exploits:</strong> Exploiting vulnerabilities in the operating system's kernel to gain elevated privileges.</li>
+                    <li><strong>File Permission Manipulation:</strong> Modifying file permissions to gain access to restricted areas.</li>
+                    <li><strong>Executable Exploits:</strong> Exploiting vulnerabilities in executable files to execute code with higher privileges.</li>
+                    <li><strong>Service Misconfigurations:</strong> Identifying and exploiting misconfigurations in system services for privilege escalation.</li>
+                    <li><strong>Abusing SUID/GUID:</strong> Exploiting set-user-ID (SUID) or set-group-ID (GUID) binaries to execute commands with elevated privileges.</li>
+                </ul>
+            </article>
+
+            <!-- Vertical Privilege Escalation -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Vertical Privilege Escalation</h2>
+                <p>Vertical privilege escalation involves gaining higher-level privileges within an organization's hierarchy. This can occur through:</p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li><strong>Exploiting Weak User Authentication:</strong> Cracking or obtaining passwords to impersonate higher-privileged users.</li>
+                    <li><strong>Abusing Service Accounts:</strong> Exploiting vulnerabilities in service accounts or using compromised credentials for higher access.</li>
+                    <li><strong>Pass-the-Ticket Attacks:</strong> Utilizing Kerberos tickets to move laterally and escalate privileges.</li>
+                    <li><strong>Exploiting Group Policy Weaknesses:</strong> Identifying and abusing weaknesses in group policies for privilege escalation.</li>
+                    <li><strong>Targeting Active Directory:</strong> Exploiting vulnerabilities in Active Directory to gain administrative privileges.</li>
+                </ul>
+            </article>
+
+            <!-- Mitigation Strategies -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Mitigation Strategies</h2>
+                <p>Preventing privilege escalation is crucial for maintaining a secure environment. Implement the following strategies:</p>
+                <ul class="list-disc pl-5 mt-4">
+                    <li><strong>Regular Patching:</strong> Keep systems and software up-to-date to address known vulnerabilities.</li>
+                    <li><strong>Least Privilege Principle:</strong> Assign minimum necessary privileges to users and services to limit the impact of potential escalations.</li>
+                    <li><strong>Monitoring and Logging:</strong> Implement robust monitoring and logging systems to detect and respond to suspicious activities.</li>
+                    <li><strong>Access Controls:</strong> Enforce strong access controls, ensuring users have access only to the resources necessary for their roles.</li>
+                    <li><strong>User Training:</strong> Educate users about the risks of social engineering and the importance of strong passwords.</li>
+                    <li><strong>Privilege Escalation Testing:</strong> Regularly conduct ethical hacking tests to identify and address potential privilege escalation vulnerabilities.</li>
+                </ul>
+            </article>
+
+            <!-- Additional Information -->
+            <article class="bg-gray-700 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-bold mb-3">Additional Information</h2>
+
+                <h3 class="text-xl font-semibold mt-4">Privilege Escalation (Summary)</h3>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>What can I do?</strong> - Retrieve passwords/keys, access sensitive/confidential files, exploit vulnerable OS/software/applications, exploit incorrect file permissions/misconfigurations, network attacks.</li>
+                    <li><strong>Who am I?</strong> - User identity (whoami, id), user rights (sudo, permissions, groups), shell type (tty shell), breakout shell, running cmd as administrator in Windows XP.</li>
+                    <li><strong>What is my environment?</strong> - OS details, kernel version (e.g., dirtycow exploit in Ubuntu), environment details (env command in Linux), allowed programming languages and tools (e.g., gcc, python), file upload methods.</li>
+                    <li><strong>How do users use the system?</strong> - User activities (e.g., who else is logged on, history, profiles, cache), directory services enumeration, sensitive information discovery.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-4">Automating the Process</h3>
+                <ul class="list-disc pl-5 mt-2">
+                    <li><strong>Tools:</strong> Searchsploit, Unix-privesc-check, enum4linux, Metasploit, Jaws, Powersploit, WinPEAS, LinPEAS, etc.</li>
+                    <li><strong>Useful Resource:</strong> Tools may not use all techniques, could be noisy and make cleaning up difficult.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
