@@ -8,132 +8,130 @@
     <title>Exam Revision Page</title>
     <style>
         body {
-            background-color: #1a1a1a;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+            @apply bg-gray-900 text-white font-sans m-0 p-0 overflow-x-hidden;
         }
 
         nav {
-            background-color: #333333;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+            @apply bg-gray-800 shadow-md relative z-10;
         }
 
         nav a {
-            color: #ffffff;
-            transition: color 0.3s ease;
+            @apply text-white transition-colors duration-300;
         }
 
         nav a:hover {
-            color: #4CAF50;
+            @apply text-green-500;
         }
 
         main {
-            margin-top: 6rem;
+            @apply mt-16 relative z-0;
         }
 
         section {
-            background-color: #2b2b2b;
-            border-radius: 10px;
-            margin-bottom: 1.5rem;
-            overflow: hidden;
+            @apply bg-gray-800 rounded-lg mb-6 overflow-hidden;
         }
 
         section h2 {
-            color: #ffffff;
+            @apply text-2xl font-bold p-6;
         }
 
         section h3 {
-            color: #888888;
+            @apply text-md font-medium text-gray-400 p-6;
         }
 
         section a {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.75rem 1.5rem;
-            background-color: #4CAF50;
-            color: #ffffff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+            @apply inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center transition-colors duration-300;
         }
 
         section a:hover {
-            background-color: #45a049;
+            @apply bg-green-700;
+        }
+
+        .corner-svg {
+            @apply absolute top-0 left-0 pointer-events-none z-0;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <div class="flex-shrink-0 flex items-center">
-                        <a href="#" class="text-xl font-semibold text-white">Exam Revision</a>
-                    </div>
-                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="#BIS" class="text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Business Information Security Systems</a>
-                        <a href="#EH" class="text-gray-300 hover:text-white hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Ethical Hacking</a>
-                        <a href="#SC" class="text-gray-300 hover:text-white hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Security Cryptography</a>
-                    </div>
+<nav>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-semibold text-white">Exam Revision</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#BIS" class="text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Business Information Security Systems</a>
+                    <a href="#EH" class="text-gray-300 hover:text-white hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Ethical Hacking</a>
+                    <a href="#SC" class="text-gray-300 hover:text-white hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">Security Cryptography</a>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <main>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <section id="BIS">
-                <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 bg-gray-800 border-b border-gray-700">
-                        <h2 class="text-2xl font-bold">Business Information Security Systems</h2>
-                        <h3 class="text-md font-medium text-gray-400">Weekly Guide</h3>
-                        <a href="biss/index.html" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center">
-                            Go to Course Page
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="EH">
-                <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 bg-gray-800 border-b border-gray-700">
-                        <h2 class="text-2xl font-bold">Ethical Hacking</h2>
-                        <h3 class="text-md font-medium text-gray-400">Weekly Guide</h3>
-                        <a href="eh/index.html" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center">
-                            Go to Course Page
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="SC">
-                <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 bg-gray-800 border-b border-gray-700">
-                        <h2 class="text-2xl font-bold">Security & Cryptography</h2>
-                        <h3 class="text-md font-medium text-gray-400">Weekly Guide</h3>
-                        <a href="sc/index.html" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center">
-                            Go to Course Page
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
+<svg class="corner-svg" width="300" height="300" data-name="corner-top-left" xmlns="http://www.w3.org/2000/svg" style="pointer-events:none" data-inlinesvg=".inlineSvgFile-3">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0" class="gradient1"></stop>
+            <stop offset=".5" class="gradient2"></stop>
+            <stop offset="1" class="gradient1"></stop>
+        </linearGradient>
+    </defs>
+    <path fill="url('#grad1')" d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
+</svg>
 
-    <script>
-        function goToSection(sectionId) {
-            gsap.to(window, { duration: 1, scrollTo: sectionId, ease: "power2.inOut" });
-        }
+<main>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="BIS">
+            <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-gray-800 border-b border-gray-700">
+                    <h2 class="text-2xl font-bold">Business Information Security Systems</h2>
+                    <h3 class="text-md font-medium text-gray-400">Weekly Guide</h3>
+                    <a href="biss/index.html" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center">
+                        Go to Course Page
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="EH">
+            <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-gray-800 border-b border-gray-700">
+                    <h2 class="text-2xl font-bold">Ethical Hacking</h2>
+                    <h3 class="text-md font-medium text-gray-400">Weekly Guide</h3>
+                    <a href="eh/index.html" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center">
+                        Go to Course Page
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="SC">
+            <div class="bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-gray-800 border-b border-gray-700">
+                    <h2 class="text-2xl font-bold">Security & Cryptography</h2>
+                    <h3 class="text-md font-medium text-gray-400">Weekly Guide</h3>
+                    <a href="sc/index.html" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded block text-center">
+                        Go to Course Page
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
 
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const sectionId = this.getAttribute('href');
-                goToSection(sectionId);
-            });
+<script>
+    function goToSection(sectionId) {
+        gsap.to(window, { duration: 1, scrollTo: sectionId, ease: "power2.inOut" });
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const sectionId = this.getAttribute('href');
+            goToSection(sectionId);
         });
-    </script>
+    });
+</script>
 </body>
 </html>
