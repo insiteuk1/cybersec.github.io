@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4: Cryptosystems and Block Ciphers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center">
+          Week 4: Cryptosystems and Block Ciphers
+        </h1>
+      </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+      <!-- Section 1: Cryptosystem -->
+      <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Cryptosystem</h2>
+          <p class="mt-4">
+            A cryptosystem consists of a 5-tuple (E, D, M, K, C) such that:
+          </p>
+          <ul class="list-disc ml-6">
+            <li>M, K, and C are finite sets</li>
+            <li>M is the set of plaintexts</li>
+            <li>K is the set of keys</li>
+            <li>C is the set of ciphertexts</li>
+            <li>E is the encryption algorithm sets E : M × K ⇒ C</li>
+            <li>D is the decryption algorithm sets D : C × K ⇒ M</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section 2: Towards principles of modern cryptography -->
+      <section id="section2" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">
+            Towards Principles of Modern Cryptography
+          </h2>
+          <p class="mt-4">
+            Ciphers considered so far were:
+          </p>
+          <ol class="list-decimal ml-6">
+            <li>Vulnerable to exhaustive search</li>
+            <li>Vulnerable to frequency analysis</li>
+            <li>Small change in plaintext results in small change in ciphertext</li>
+            <li>Insufficient to rely on secrecy of the algorithm used</li>
+          </ol>
+          <p class="mt-4">
+            Modern algorithms abide by the principles of:
+          </p>
+          <ol class="list-decimal ml-6">
+            <li>Large enough key space to resist exhaustive search</li>
+            <li>Resistant to frequency analysis</li>
+            <li>Small change in plaintext results in a large change in ciphertext</li>
+            <li>Security depends only on secrecy of the key, not on secrecy of the algorithm (Kerckhoff’s principle)</li>
+          </ol>
+        </article>
+      </section>
+
+      <!-- Section 3: Advanced Encryption Standard (AES) -->
+      <section id="section3" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Advanced Encryption Standard (AES)</h2>
+          <p class="mt-4">
+            Used every day to secure internet browsing and mobile communications.
+          </p>
+          <ul class="list-disc ml-6">
+            <li>Developed to replace both DES and 3DES</li>
+            <li>DES can be broken on a PC in minutes</li>
+            <li>Triple DES (3DES) extended the lifetime of the algorithm</li>
+            <li>15 candidates submitted to 1997 NIST call</li>
+            <li>Rijmen and Daemen proposed Rijndael</li>
+            <li>Rijndael approved by NIST in 2001</li>
+            <li>Substitution-Permutation Network (SPN)</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section 4: Substitution Permutation Networks -->
+      <section id="section4" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Substitution Permutation Networks</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 5: Logical Operations -->
+      <section id="section5" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Logical Operations</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 6: XOR Cipher -->
+      <section id="section6" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">XOR Cipher</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 7: Substitution and Permutation Recap -->
+      <section id="section7" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Substitution and Permutation Recap</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 8: Heys Cipher -->
+      <section id="section8" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Heys Cipher</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 9: DES History -->
+      <section id="section9" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">DES History</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 10: Looking Back -->
+      <section id="section10" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Back</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+
+      <!-- Section 11: Looking Forward -->
+      <section id="section11" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Forward</h2>
+          <!-- Add content as needed -->
+        </article>
+      </section>
+    </main>
+    <footer class="bg-purple-900 p-4 mt-8">
+      <p class="text-center text-gray-300">
+        Using AES with other modes of operation can avoid the illustrated issue.
+      </p>
+    </footer>
+  </body>
+</html>
