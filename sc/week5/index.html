@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5: Modes of Operation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center">Week 5: Modes of Operation</h1>
+      </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+      <!-- Section: Looking Back -->
+      <section id="looking-back" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Back</h2>
+          <p class="mt-4">
+            SPN Ciphers use a repeated application of XOR key mixing, substitution, and permutation to achieve confusion and diffusion. Feistel Ciphers break designing a good cipher down into key expansion/schedule algorithm and round function F. DES, 3DES, and AES are examples of block ciphers, which are symmetric key algorithms. Currently, only AES is recommended for use.
+          </p>
+          <h3 class="text-xl font-bold mt-4">Looking Back - DES, 3DES and AES</h3>
+          <table class="table-auto my-4">
+            <thead>
+              <tr>
+                <th>Algorithm</th>
+                <th>Developed (year)</th>
+                <th>Structure</th>
+                <th>Block Size (bits)</th>
+                <th>Key Length (bits)</th>
+                <th>Possible Keys</th>
+                <th>Exhaustive Search</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DES</td>
+                <td>1977</td>
+                <td>Feistel</td>
+                <td>64</td>
+                <td>56</td>
+                <td>2^56</td>
+                <td>400 days at 50bn keys/sec</td>
+              </tr>
+              <tr>
+                <td>3DES</td>
+                <td>1978</td>
+                <td>Feistel</td>
+                <td>64</td>
+                <td>112 or 168</td>
+                <td>2^112 or 2^168</td>
+                <td>800 days at 50bn keys/sec</td>
+              </tr>
+              <tr>
+                <td>AES</td>
+                <td>2000</td>
+                <td>SPN</td>
+                <td>128</td>
+                <td>128, 192 or 256</td>
+                <td>2^128, 2^192 or 2^256</td>
+                <td>5 × 10^21</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="text-xl font-bold mt-4">AES Finalists</h3>
+          <ul class="list-disc ml-6">
+            <li>MARS - IBM</li>
+            <li>RC6 - RSA Laboratories</li>
+            <li>Rijndael - Joan Daeman, Vincent Rijmen</li>
+            <li>Serpent - Ross Anderson, Eli Biham, and Lars Knudsen</li>
+            <li>Twofish - Bruce Schneier, John Kelsey, Doug Whiting, David Wagner, Chris Hall, and Niels Ferguson</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section: Evaluation Criteria -->
+      <section id="evaluation-criteria" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Evaluation Criteria</h2>
+          <ol class="list-decimal ml-6">
+            <li><strong>Security:</strong> Resistance to cryptanalysis, soundness of math, randomness of output, etc</li>
+            <li><strong>Cost:</strong> Computational efficiency (speed) and memory requirements, etc</li>
+            <li><strong>Algorithm and Implementation Characteristics:</strong> Flexibility, hardware and software suitability, algorithm simplicity, etc</li>
+          </ol>
+          <p class="mt-4">In that order!</p>
+        </article>
+      </section>
+
+      <!-- Section: AES Winner - Rijndael -->
+      <section id="aes-winner" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">AES Winner - Rijndael</h2>
+          <ul class="list-disc ml-6">
+            <li>Excellent performance across platforms</li>
+            <li>Good security margin</li>
+            <li>Well-suited to smart cards due to low memory (RAM and ROM) requirements</li>
+            <li>Operations defend well against attacks on smart card implementations</li>
+            <li>Fast key setup</li>
+            <li>Supports expanded key and block sizes</li>
+            <li>Good instruction-level parallelism</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section: Overall Performance -->
+      <section id="overall-performance" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Overall Performance</h2>
+          <table class="table-auto my-4">
+            <thead>
+              <tr>
+                <th>Algorithm</th>
+                <th>Enc/Dec</th>
+                <th>Key Setup</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MARS</td>
+                <td>II</td>
+                <td>II</td>
+              </tr>
+              <tr>
+                <td>RC6</td>
+                <td>I</td>
+                <td>II</td>
+              </tr>
+              <tr>
+                <td>Rijndael</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+              <tr>
+                <td>Serpent</td>
+                <td>III</td>
+                <td>II</td>
+              </tr>
+              <tr>
+                <td>Twofish</td>
+                <td>II</td>
+                <td>III</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <!-- Section: Looking Forward -->
+      <section id="looking-forward" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Forward</h2>
+          <p class="mt-4">
+            Here’s an image encrypted using AES. Would you consider it secure? This time we’ll look at Block Cipher Modes of Operation. Using AES with other modes of operation can avoid the illustrated issue.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Block Ciphers in Practice -->
+      <section id="block-ciphers-practice" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Forward - Block Ciphers in Practice</h2>
+          <ul class="list-disc ml-6">
+            <li><strong>Padding</strong></li>
+            <li><strong>Electronic Code Book (ECB) Mode</strong></li>
+            <li><strong>Other Modes of Operation</strong></li>
+            <ul class="list-disc ml-6">
+              <li>CBC</li>
+              <li>OFB</li>
+              <li>CFB</li>
+              <li>GCM</li>
+            </ul>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section: Padding -->
+      <section id="padding" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Padding</h2>
+          <p class="mt-4">
+            Often the message's length is not a multiple of the block size. For example:
+            THE_LENGTH_OF_TH
+            IS_MESSAGE_IS_NO
+            T_EXACTLY_DIVISI
+            BLE_BY_THE_NUMBE
+            R_OF_BLOCKS
+          </p>
+          <p class="mt-4">So the last block won’t fit into the block cipher. What’s the problem with just padding with zeroes? i.e.,</p>
+          <pre class="mt-4"><code>01010011 00000000 00000000 00000000 00000000 00000000
+52 5F 4F 46 5F 42 4C 4F 43 4B 53 00 00 00 00 00</code></pre>
+          <h3 class="text-xl font-bold mt-4">Bit Padding</h3>
+          <pre class="mt-4"><code>01010011 10000000 00000000 00000000 00000000 00000000
+^^^^^^^^ ^^^^^^^^ ^^^^^^^^ ^^^^^^^^ ^^^^^^^^
+52 5F 4F 46 5F 42 4L 4F 43 4B 53 00 00 00 00 05</code></pre>
+          <h3 class="text-xl font-bold mt-4">ISO 10126</h3>
+          <pre class="mt-4"><code>52 5F 4F 46 5F 42 4C 4F 43 4B 53 81 A6 23 0E 05</code></pre>
+          <h3 class="text-xl font-bold mt-4">PKCS7</h3>
+          <pre class="mt-4"><code>52 5F 4F 46 5F 42 4C 4F 43 4B 53 05 05 05 05 05</code></pre>
+        </article>
+      </section>
+
+      <!-- Section: Electronic Code Book (ECB) Mode -->
+      <section id="ecb-mode" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Electronic Code Book (ECB) Mode</h2>
+          <p class="mt-4">
+            The simplest, most natural approach, and the most efficient. It only has a huge drawback! Here’s an image encrypted with AES using ECB. Would you consider it secure? Using AES with other modes of operation can avoid the illustrated issue.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: ECB Example -->
+      <section id="ecb-example" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">ECB Example</h2>
+          <p class="mt-4">
+            Here is the plaintext "SIXTEENBYTEBLOCK"*4 encrypted with AES using ECB with key b’Sixteen byte key’:
+          </p>
+          <pre class="mt-4"><code>e68c20df74691b4cf19430c1c8bf9d2b
+e68c20df74691b4cf19430c1c8bf9d2b
+e68c20df74691b4cf19430c1c8bf9d2b
+e68c20df74691b4cf19430c1c8bf9d2b</code></pre>
+          <p class="mt-4">Because each block of plaintext is the same, so too is each block of ciphertext the same.</p>
+        </article>
+      </section>
+
+      <!-- Section: Cipher Block Chaining (CBC) -->
+      <section id="cbc-mode" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Cipher Block Chaining (CBC) Encryption</h2>
+          <p class="mt-4">Errors will propagate to the next block.</p>
+        </article>
+      </section>
+
+      <!-- Section: CBC Example -->
+      <section id="cbc-example" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">CBC Example</h2>
+          <p class="mt-4">
+            Here is the plaintext "SIXTEENBYTEBLOCK"*4 encrypted with AES using CBC with key b’Sixteen byte key’ and initialization vector b’Sixteen byte iv’:
+          </p>
+          <pre class="mt-4"><code>f467e998a4184f128f077fbc915b56fc
+277a707256e115daae0264f57ecf7a46
+e61a86e520df1919805e3b127687f24a
+e3e95d8ff5c683e2954aa4b9fa84ebe8</code></pre>
+          <p class="mt-4">Even though each block of plaintext is the same, each block of ciphertext is now different.</p>
+        </article>
+      </section>
+
+      <!-- Section: Other Modes of Operation -->
+      <section id="other-modes" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Other Modes of Operation</h2>
+          <ul class="list-disc ml-6">
+            <li>Output Feedback (OFB) Mode</li>
+            <li>Cipher Feedback (CFB) Mode</li>
+            <li>Counter Mode (CTR)</li>
+            <li>Galois Counter Mode (GCM)</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section: One Time Pads -->
+      <section id="one-time-pads" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">One Time Pads</h2>
+          <p class="mt-4">
+            If the key is truly random and is the same length as the plaintext, then the ciphertext is also truly random. What we have is a one-time pad. A one-time pad is a chunk of key material that is as long as the plaintext to be encrypted and that, once it is used, is thrown away and never used again for encrypting anything.
+          </p>
+          <p class="mt-4">
+            The following text has been encrypted using Vigen`ere with a truly random key that is as long as the plaintext. Can you decipher it?
+            W B A G D S H I R H S S H E Q M
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Unbreakability of One Time Pads -->
+      <section id="otp-unbreakability" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Unbreakability of One Time Pads</h2>
+          <p class="mt-4">
+            The ciphertext on the previous slide is (literally) unbreakable. The reason is that the plaintext could be (literally) anything. For any proposed plaintext, there is a key that would produce the given ciphertext; and since the key is random, any key is just as likely as any other.
+          </p>
+          <p class="mt-4">
+            So it could be:
+            comeroundatseven
+            but it could equally be:
+            dontbotherimbusy
+            or anything else of the right length. We have nothing to go on (except length).
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Stream Ciphers -->
+      <section id="stream-ciphers" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Stream Ciphers</h2>
+          <p class="mt-4">
+            Encrypt each byte/bit in turn – instead of in blocks. Loosely based around the idea of the one-time pad. XOR cipher where the key is as long as the message. Perfect and provable security. Generate a pseudorandom key stream and use it as the key to an XOR cipher. However, a one-time pad requires a truly random key stream (pad) to be provably secure. So stream ciphers can be completely insecure.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Synchronous Stream Ciphers -->
+      <section id="sync-stream-ciphers" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Synchronous Stream Ciphers</h2>
+          <p class="mt-4">
+            Pseudo-random digits generated independently of plaintext and ciphertext. Both sides must be synchronized.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Self-synchronising Stream Ciphers -->
+      <section id="self-sync-stream-ciphers" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Self-synchronising Stream Ciphers</h2>
+          <p class="mt-4">
+            Will resynchronize after a certain number of bytes since a lost one.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Basic Stream Ciphers -->
+      <section id="basic-stream-ciphers" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Basic Stream Ciphers</h2>
+          <p class="mt-4">
+            Used to be based around Linear Feedback Shift Registers (LFSRs).
+            <a href="https://en.wikipedia.org/wiki/Linear-feedback_shift_register">Wikimedia Commons</a>
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: LFSR -->
+      <section id="lfsr" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">LFSR</h2>
+          <p class="mt-4">
+            Fairly easy to cryptanalyze (in basic form). With known plaintext and LFSR can calculate state and hence future stream. If unknown LFSR, then Berlekamp-Massey algorithm. Famously used in DVD CSS and A5/1.
+            <a href="https://en.wikipedia.org/wiki/Linear-feedback_shift_register">Wikimedia Commons</a>
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: RC4 -->
+      <section id="rc4" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">RC4</h2>
+          <p class="mt-4">
+            Designed in 1987 by Ron Rivest – kept secret. Exceptionally simple and compact stream cipher (pseudorandom number generator). Two stages: A key scheduling phase and a stream generation phase.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: RC4 Pseudo-random Generation Algorithm (PRGA) -->
+      <section id="rc4-prga" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">RC4 Pseudo-random Generation Algorithm (PRGA)</h2>
+          <pre class="mt-4"><code>
+Aka key stream generator
+i := 0
+j := 0
+while GeneratingOutput:
+i := (i + 1) mod 256
+j := (j + S[i]) mod 256
+swap values of S[i] and S[j]
+K := S[(S[i] + S[j]) mod 256]
+output K
+endwhile
+          </code></pre>
+        </article>
+      </section>
+
+      <!-- Section: Cryptanalysis of RC4 -->
+      <section id="rc4-cryptanalysis" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Cryptanalysis of RC4</h2>
+          <p class="mt-4">
+            Remember – the same key can never be used twice as it’ll produce the same key stream. Andrew Roos experimentally showed that the first byte of the keystream is correlated to just the first three bytes of the key. The second output byte is biased to zero with a probability of 1/128. The first few bytes of the keystream are strongly non-random and related to the key.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Looking Back -->
+      <section id="looking-back-2" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Back</h2>
+          <ul class="list-disc ml-6">
+            <li>Padding</li>
+            <li>ECB Mode Block Cipher</li>
+            <li>Other Block Cipher Modes of Operation</li>
+            <ul class="list-disc ml-6">
+              <li>CBC</li>
+              <li>OFB</li>
+              <li>CFB</li>
+              <li>GCM</li>
+            </ul>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Section: Key Exchange Problem -->
+      <section id="key-exchange-problem" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Key Exchange Problem</h2>
+          <p class="mt-4">
+            n ∗ (n − 1)/2 keys. O(n^2). Internet: 4,536,248,808 users. 10,288,776,621,772,586,028 keys. 1 ∗ 10^19 keys.
+          </p>
+        </article>
+      </section>
+
+      <!-- Section: Looking Back and Forward -->
+      <section id="look-back-forward" class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+        <article class="bg-gray-700 p-6 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-3">Looking Back and Forward</h2>
+          <p class="mt-4">
+            Symmetric cryptography uses the same key (shared by two or more parties) used to encrypt and decrypt (e.g., AES). The hybrid approach utilizes the advantages of both symmetric and asymmetric cryptography. Asymmetric cryptography uses two different keys: a secret key (known to only one party) used to decrypt messages that were encrypted using the public key (known to all), e.g., RSA. It enables the creation of digital signatures.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

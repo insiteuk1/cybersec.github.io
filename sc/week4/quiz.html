@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Quiz: Cryptosystems and Block Ciphers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center">Week 4 Quiz: Cryptosystems and Block Ciphers</h1>
+        </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+        <form>
+            <!-- Question 1 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">1. What is the purpose of a cryptosystem?</p>
+                <label class="block mb-2"><input type="radio" name="question1" value="correct"> To secure communication by encrypting and decrypting messages.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> To generate random keys for encryption.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> To compress messages for efficient transmission.</label>
+                <label class="block mb-2"><input type="radio" name="question1" value="wrong"> To authenticate users in a network.</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">2. According to Kerckhoff's principle, what should the security of a cryptosystem depend on?</p>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> The complexity of the encryption algorithm.</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> The size of the plaintext and ciphertext sets.</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="correct"> The secrecy of the key, not the secrecy of the algorithm.</label>
+                <label class="block mb-2"><input type="radio" name="question2" value="wrong"> The randomness of the initial state.</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">3. What principles do modern cryptography algorithms abide by?</p>
+                <label class="block mb-2"><input type="radio" name="question3" value="correct"> Large enough key space, resistance to frequency analysis, and changing ciphertext significantly with small changes in plaintext.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> Small key space, reliance on frequency analysis, and consistent ciphertext for similar plaintext.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> Minimal key space, vulnerability to frequency attacks, and unchanged ciphertext for small plaintext changes.</label>
+                <label class="block mb-2"><input type="radio" name="question3" value="wrong"> Dynamic key space, susceptibility to frequency analysis, and consistent ciphertext for all plaintext inputs.</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">4. Which encryption algorithm is commonly used to secure internet browsing and mobile communications?</p>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> Caesar Cipher</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> Vigenère Cipher</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="wrong"> RSA Algorithm</label>
+                <label class="block mb-2"><input type="radio" name="question4" value="correct"> Advanced Encryption Standard (AES)</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">5. What does AES stand for?</p>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> Advanced Encoding System</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="correct"> Advanced Encryption Standard</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> Automated Encryption Service</label>
+                <label class="block mb-2"><input type="radio" name="question5" value="wrong"> Advanced Security Encryption</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">6. What is the purpose of Substitution Permutation Networks (SPN) in block ciphers?</p>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> To generate random keys.</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="correct"> To provide a structure for block cipher design, involving substitution and permutation operations.</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> To perform logical operations in encryption.</label>
+                <label class="block mb-2"><input type="radio" name="question6" value="wrong"> To implement XOR ciphers.</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">7. What is XOR Cipher commonly used for?</p>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Securing internet communication.</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Digital signatures.</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="correct"> Stream cipher encryption.</label>
+                <label class="block mb-2"><input type="radio" name="question7" value="wrong"> Public key encryption.</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">8. What is the key characteristic of Heys Cipher?</p>
+                <label class="block mb-2"><input type="radio" name="question8" value="correct"> Use of a Feistel network structure.</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> Dependency on a small key space.</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> Reliance on frequency analysis.</label>
+                <label class="block mb-2"><input type="radio" name="question8" value="wrong"> Utilization of substitution-permutation networks.</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">9. What is the significance of Rijndael in the history of block ciphers?</p>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> It is a historical algorithm with no practical use.</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="correct"> It was selected as the Advanced Encryption Standard (AES) by NIST in 2001.</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> It was the first block cipher ever invented.</label>
+                <label class="block mb-2"><input type="radio" name="question9" value="wrong"> It is used in public key cryptography.</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+                <p class="text-lg mb-2">10. What is the purpose of the XOR operation in block ciphers?</p>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To perform substitution.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To generate random keys.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="correct"> To introduce diffusion and ensure that small changes in plaintext result in significant changes in ciphertext.</label>
+                <label class="block mb-2"><input type="radio" name="question10" value="wrong"> To implement permutation networks.</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()" class="mt-4 bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">Submit Quiz</button>
+        </form>
+        <div id="result" class="hidden mt-4 p-4 bg-purple-700 rounded">
+            <p class="text-xl" id="scoreText"></p>
+        </div>
+    </main>
+
+    <footer class="bg-purple-900 p-4 mt-8">
+        <p class="text-center text-gray-300">
+            Using AES with other modes of operation can avoid the illustrated issue.
+        </p>
+    </footer>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            const totalQuestions = 10;
+            const incorrectAnswers = [];
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                const question = document.querySelector(`input[name="question${i}"]:checked`);
+                if (question) {
+                    if (question.value === "correct") {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(i);
+                    }
+                }
+            }
+
+            const scorePercent = (score / totalQuestions) * 100;
+
+            let resultText = `Your score is: ${scorePercent.toFixed(2)}%`;
+            if (incorrectAnswers.length > 0) {
+                resultText += `\nIncorrect answers: ${incorrectAnswers.join(', ')}`;
+            }
+
+            document.getElementById('scoreText').innerText = resultText;
+            document.getElementById('result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

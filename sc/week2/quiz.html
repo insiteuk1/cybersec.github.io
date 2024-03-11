@@ -109,6 +109,7 @@
             </div>
 
             <button type="button" onclick="submitQuiz()" class="mt-4 bg-purple-600 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded">Submit Quiz</button>
+            <button type="button" onclick="resetQuiz()" class="mt-4 bg-gray-600 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">Reset Quiz</button>
         </form>
         <div id="result" class="hidden mt-4 p-4 bg-purple-700 rounded">
             <p class="text-xl" id="scoreText"></p>
@@ -119,18 +120,38 @@
         function submitQuiz() {
             let score = 0;
             const totalQuestions = 10;
-            // Check each question
+            const incorrectAnswers = [];
+    
             for (let i = 1; i <= totalQuestions; i++) {
                 const question = document.querySelector(`input[name="question${i}"]:checked`);
-                if (question && question.value === "correct") {
-                    score++;
+                if (question) {
+                    if (question.value === "correct") {
+                        score++;
+                    } else {
+                        incorrectAnswers.push(i);
+                    }
                 }
             }
-            // Calculate percentage
+    
             const scorePercent = (score / totalQuestions) * 100;
-            // Display result
-            document.getElementById('scoreText').innerText = `Your score is: ${scorePercent.toFixed(2)}%`;
+    
+            let resultText = `Your score is: ${scorePercent.toFixed(2)}%`;
+            if (incorrectAnswers.length > 0) {
+                resultText += `\nIncorrect answers: ${incorrectAnswers.join(', ')}`;
+            }
+    
+            document.getElementById('scoreText').innerText = resultText;
             document.getElementById('result').classList.remove('hidden');
+        }
+    
+        function resetQuiz() {
+            document.getElementById('result').classList.add('hidden');
+    
+            // Uncheck all radio buttons
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(button => {
+                button.checked = false;
+            });
         }
     </script>
 </body>

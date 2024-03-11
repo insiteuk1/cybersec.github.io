@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5 Quiz: Modes of Operation in Cryptography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="bg-purple-900 p-4 shadow-md">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold text-center">Week 5 Quiz: Modes of Operation in Cryptography</h1>
+      </div>
+    </header>
+    <main class="container mx-auto my-8 p-4">
+      <form>
+        <!-- Question 1 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">1. What is the main purpose of using modes of operation in block ciphers?</p>
+          <label class="block mb-2"><input type="radio" name="q1" value="B"> A) Increase the size of the key space</label>
+          <label class="block mb-2"><input type="radio" name="q1" value="D"> B) Achieve confusion and diffusion</label>
+          <label class="block mb-2"><input type="radio" name="q1" value="C"> C) Improve the efficiency of the encryption algorithm</label>
+          <label class="block mb-2"><input type="radio" name="q1" value="A"> D) Enhance resistance to frequency analysis</label>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">2. Which block cipher mode has the drawback of producing the same ciphertext for identical blocks of plaintext?</p>
+          <label class="block mb-2"><input type="radio" name="q2" value="A"> A) Electronic Code Book (ECB)</label>
+          <label class="block mb-2"><input type="radio" name="q2" value="B"> B) Cipher Block Chaining (CBC)</label>
+          <label class="block mb-2"><input type="radio" name="q2" value="C"> C) Output Feedback (OFB)</label>
+          <label class="block mb-2"><input type="radio" name="q2" value="D"> D) Counter Mode (CTR)</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">3. What is the purpose of padding in block ciphers?</p>
+          <label class="block mb-2"><input type="radio" name="q3" value="B"> A) Increase the security of the encryption algorithm</label>
+          <label class="block mb-2"><input type="radio" name="q3" value="A"> B) Improve the speed of encryption</label>
+          <label class="block mb-2"><input type="radio" name="q3" value="C"> C) Ensure the last block fits into the block cipher</label>
+          <label class="block mb-2"><input type="radio" name="q3" value="D"> D) Reduce the size of the key space</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">4. Which block cipher mode propagates errors to the next block?</p>
+          <label class="block mb-2"><input type="radio" name="q4" value="B"> A) Electronic Code Book (ECB)</label>
+          <label class="block mb-2"><input type="radio" name="q4" value="A"> B) Cipher Block Chaining (CBC)</label>
+          <label class="block mb-2"><input type="radio" name="q4" value="C"> C) Output Feedback (OFB)</label>
+          <label class="block mb-2"><input type="radio" name="q4" value="D"> D) Counter Mode (CTR)</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">5. What is the main advantage of using a one-time pad?</p>
+          <label class="block mb-2"><input type="radio" name="q5" value="B"> A) Fast key setup</label>
+          <label class="block mb-2"><input type="radio" name="q5" value="A"> B) Large security margin</label>
+          <label class="block mb-2"><input type="radio" name="q5" value="C"> C) Compatibility with smart cards</label>
+          <label class="block mb-2"><input type="radio" name="q5" value="D"> D) Reusability of the key</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">6. Which stream cipher is known for its simplicity and compactness?</p>
+          <label class="block mb-2"><input type="radio" name="q6" value="A"> A) Linear Feedback Shift Register (LFSR)</label>
+          <label class="block mb-2"><input type="radio" name="q6" value="B"> B) Rivest Cipher 4 (RC4)</label>
+          <label class="block mb-2"><input type="radio" name="q6" value="C"> C) Advanced Encryption Standard (AES)</label>
+          <label class="block mb-2"><input type="radio" name="q6" value="D"> D) Data Encryption Standard (DES)</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">7. What is the purpose of the key scheduling phase in RC4?</p>
+          <label class="block mb-2"><input type="radio" name="q7" value="A"> A) Generate the pseudorandom key stream</label>
+          <label class="block mb-2"><input type="radio" name="q7" value="B"> B) Swap values in the array based on the key</label>
+          <label class="block mb-2"><input type="radio" name="q7" value="C"> C) Initialize the state of the cipher</label>
+          <label class="block mb-2"><input type="radio" name="q7" value="D"> D) Mix the bytes in the array</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">8. Which block cipher mode is well-suited for encrypting multiple independent data units?</p>
+          <label class="block mb-2"><input type="radio" name="q8" value="A"> A) Electronic Code Book (ECB)</label>
+          <label class="block mb-2"><input type="radio" name="q8" value="B"> B) Cipher Block Chaining (CBC)</label>
+          <label class="block mb-2"><input type="radio" name="q8" value="C"> C) Output Feedback (OFB)</label>
+          <label class="block mb-2"><input type="radio" name="q8" value="D"> D) Counter Mode (CTR)</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">9. What is the main advantage of using symmetric cryptography?</p>
+          <label class="block mb-2"><input type="radio" name="q9" value="A"> A) Large key space</label>
+          <label class="block mb-2"><input type="radio" name="q9" value="B"> B) Asymmetric key pairs</label>
+          <label class="block mb-2"><input type="radio" name="q9" value="C"> C) Single shared key for both encryption and decryption</label>
+          <label class="block mb-2"><input type="radio" name="q9" value="D"> D) Compatibility with smart cards</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="mb-4 p-4 bg-gray-800 rounded-lg">
+          <p class="text-lg mb-2">10. What is the purpose of the key exchange problem in cryptography?</p>
+          <label class="block mb-2"><input type="radio" name="q10" value="A"> A) Increase the security of the encryption algorithm</label>
+          <label class="block mb-2"><input type="radio" name="q10" value="B"> B) Reduce the number of possible keys</label>
+          <label class="block mb-2"><input type="radio" name="q10" value="C"> C) Simplify the encryption process</label>
+          <label class="block mb-2"><input type="radio" name="q10" value="D"> D) Establish a secure communication channel</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button onclick="submitQuiz()" class="bg-purple-600 hover:bg-purple-800 text-white py-2 px-4 rounded-full">Submit Quiz</button>
+        </div>
+      </form>
+      <div id="result" class="hidden mt-4 p-4 bg-purple-700 rounded">
+        <p class="text-xl" id="scoreText"></p>
+      </div>
+    </main>
+
+    <footer class="bg-purple-900 p-4 mt-8">
+      <p class="text-center text-gray-300">
+        Using AES with other modes of operation can avoid the illustrated issue.
+      </p>
+    </footer>
+
+    <script>
+      function submitQuiz() {
+        let score = 0;
+        const totalQuestions = 10;
+        const incorrectAnswers = [];
+
+        for (let i = 1; i <= totalQuestions; i++) {
+          const question = document.querySelector(`input[name="q${i}"]:checked`);
+          if (question) {
+            if (question.value === "correct") {
+              score++;
+            } else {
+              incorrectAnswers.push(i);
+            }
+          }
+        }
+
+        const scorePercent = (score / totalQuestions) * 100;
+
+        let resultText = `Your score is: ${scorePercent.toFixed(2)}%`;
+        if (incorrectAnswers.length > 0) {
+          resultText += `\nIncorrect answers: ${incorrectAnswers.join(', ')}`;
+        }
+
+        document.getElementById('scoreText').innerText = resultText;
+        document.getElementById('result').classList.remove('hidden');
+      }
+    </script>
+  </body>
+</html>
