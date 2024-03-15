@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 7: Diffie Hellman Key Exchange</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="bg-purple-900 p-4 shadow-md">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold text-center">
+        Week 7: Diffie Hellman Key Exchange
+      </h1>
+    </div>
+  </header>
+  <main class="container mx-auto my-8 p-4">
+    <!-- Section 1: Content -->
+    <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+      <article class="bg-gray-700 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold mb-3">Content</h2>
+        <p class="mt-4">
+          Diffie-Hellman Key Exchange (DH) is a fundamental protocol in modern cryptography used for establishing a shared secret between two parties over an insecure channel.
+        </p>
+        <p class="mt-4">
+          In this lecture, we will delve into the computation of primitive roots, understand the discrete logarithm problem (DLP), explore the Diffie-Hellman protocol with a numerical example, and summarize the key concepts learned.
+        </p>
+      </article>
+    </section>
+
+    <!-- Section 2: Learning Outcome -->
+    <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+      <article class="bg-gray-700 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold mb-3">Learning Outcome</h2>
+        <p class="mt-4">
+          By the end of this lecture, students should be able to:
+        </p>
+        <ul class="list-disc list-inside mt-4">
+          <li>Identify the application of Diffie-Hellman Key Exchange (DH) for secure communication.</li>
+          <li>Perform simple computations to generate shared symmetric keys using DH.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Section 3: Primitive Root -->
+    <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+      <article class="bg-gray-700 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold mb-3">Primitive Root</h2>
+        <p class="mt-4">
+          A primitive root of a prime number 𝑝 is an integer 𝑔 such that every integer from 1 to 𝑝-1 can be expressed as a power of 𝑔 modulo 𝑝.
+        </p>
+        <p class="mt-4">
+          To find a primitive root 𝑔 for a prime 𝑝:
+        </p>
+        <ol class="list-decimal list-inside mt-4">
+          <li>Choose a prime number 𝑝.</li>
+          <li>Select a generator 𝑔 such that 𝑔 < 𝑝.</li>
+          <li>Compute 𝑔^𝑖 mod 𝑝 for values of 𝑖 from 1 to 𝑝-1.</li>
+          <li>If all results are distinct, then 𝑔 is a primitive root of 𝑝.</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- Section 4: Discrete Logarithm Problem (DLP) -->
+    <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+      <article class="bg-gray-700 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold mb-3">Discrete Logarithm Problem (DLP)</h2>
+        <p class="mt-4">
+          The discrete logarithm problem involves finding an integer 𝑖 such that 𝑔^𝑖 ≡ 𝑎 (mod 𝑝) for given 𝑎, 𝑔, and 𝑝. This problem is computationally hard to solve, especially for large prime numbers 𝑝.
+        </p>
+        <p class="mt-4">
+          Example:
+        </p>
+        <ul class="list-disc list-inside mt-4">
+          <li>𝑔^4 ≡ 5 (mod 7)</li>
+          <li>𝑔^5 ≡ 4 (mod 7)</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Section 5: The Diffie-Hellman Protocol -->
+    <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+      <article class="bg-gray-700 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold mb-3">The Diffie-Hellman Protocol</h2>
+        <p class="mt-4">
+          The Diffie-Hellman Key Exchange Protocol is not an encryption/decryption algorithm but rather a method for securely exchanging cryptographic keys over an insecure channel.
+        </p>
+        <p class="mt-4">
+          Steps involved:
+        </p>
+        <ol class="list-decimal list-inside mt-4">
+          <li>Publicly share information about a large prime number 𝑝 and a generator 𝑔.</li>
+          <li>Both parties select secret keys: 𝑎 for Alice and 𝑏 for Bob.</li>
+          <li>Combine secret keys with public information to generate shared values 𝑌𝐴 and 𝑌𝐵.</li>
+          <li>Exchange the combined values.</li>
+          <li>Compute the shared secret key.</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- Section 6: Summary -->
+    <section class="bg-gray-700 p-6 rounded-lg shadow mt-8">
+      <article class="bg-gray-700 p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-bold mb-3">Summary</h2>
+        <p class="mt-4">
+          Diffie-Hellman Key Exchange enables secure communication over insecure channels by allowing parties to generate a shared secret key without prior communication. By leveraging the computational hardness of certain mathematical problems, such as the discrete logarithm problem, DH provides a robust mechanism for key exchange.
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer class="bg-purple-900 p-4 mt-8">
+    <p class="text-center text-gray-300">
+      Diffie Hellman Key Exchange: Securing Communication Channels.
+    </p>
+  </footer>
+</body>
+</html>
