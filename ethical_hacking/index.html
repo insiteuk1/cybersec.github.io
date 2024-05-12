@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .week {
+            margin-bottom: 20px;
+        }
+        .week h3 {
+            margin-bottom: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .dropdown-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .dropdown-button:hover {
+            background-color: #0056b3;
+        }
+        .mock-exam {
+            margin-bottom: 5px;
+        }
+        .mock-exam button {
+            margin-right: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .mock-exam button:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function toggleDropdown(week) {
+            var content = document.getElementById(week);
+            content.style.display === 'none' ? content.style.display = 'block' : content.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="week">
+        <h3>Week 1 - Introduction to Ethical Hacking</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week1')">Mock Exam</button>
+        <div id="week1" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week1/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week1/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 2 - Information Gathering</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week2')">Mock Exam</button>
+        <div id="week2" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week2/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week2/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 3 - Exploitation Concepts</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week3')">Mock Exam</button>
+        <div id="week3" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week3/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week3/mockexam2.html';">Mock Exam 2</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 4 - Deception: Social Engineering and Decoys</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week4')">Mock Exam</button>
+        <div id="week4" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week4/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week4/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 5 - Privilege Escalation</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week5')">Mock Exam</button>
+        <div id="week5" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week5/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week5/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 6 - Misconfigured File Permissions</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week6')">Mock Exam</button>
+        <div id="week6" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week6/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week6/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 7 - Exam Preparation</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week7')">Mock Exam</button>
+        <div id="week7" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week7/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week7/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 8 - Guest Lecture + Exam (no labs this week)</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week8')">Mock Exam</button>
+        <div id="week8" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week8/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week8/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 9 - Web Application Attacks (XSS, Blind SQL Injection)</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week9')">Mock Exam</button>
+        <div id="week9" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week9/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week9/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 10 - Binary Exploitation and Buffer Overflow</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week10')">Mock Exam</button>
+        <div id="week10" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week10/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week10/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="week">
+        <h3>Week 11 - Windows and Active Directory Exploitation</h3>
+        <button class="dropdown-button" onclick="toggleDropdown('week11')">Mock Exam</button>
+        <div id="week11" class="dropdown-content">
+            <div class="mock-exam">
+                <button onclick="location.href='week11/mockexam1.html';">Mock Exam 1</button>
+                <button onclick="location.href='week11/mockexam2.html';">Mock Exam 2</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,1 +1,55 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+        }
+        .course {
+            width: 200px;
+            height: 200px;
+            background-color: #007bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .course:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="ethical_hacking/index.html" class="course">
+            <h2>Ethical Hacking</h2>
+        </a>
+        <a href="business_info_systems/index.html" class="course">
+            <h2>Business Info Systems</h2>
+        </a>
+        <a href="security_cryptography/index.html" class="course">
+            <h2>Security Cryptography</h2>
+        </a>
+    </div>
+</body>
+</html>
