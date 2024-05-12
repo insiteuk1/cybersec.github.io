@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Assessment Quiz</title>
+</head>
+<body>
+    <h1>Security Assessment Quiz</h1>
+    <form id="quizForm">
+        <ol>
+            <li>
+                <h3>What does DNS enumeration aim to retrieve?</h3>
+                <input type="radio" name="q1" value="a"> MAC addresses<br>
+                <input type="radio" name="q1" value="b"> IP addresses<br>
+                <input type="radio" name="q1" value="c"> Domain names<br>
+                <input type="radio" name="q1" value="d"> Port numbers<br>
+            </li>
+            <li>
+                <h3>Which command is used to perform range scanning in Nmap?</h3>
+                <input type="radio" name="q2" value="a"> ping<br>
+                <input type="radio" name="q2" value="b"> nslookup<br>
+                <input type="radio" name="q2" value="c"> nmap<br>
+                <input type="radio" name="q2" value="d"> nikto<br>
+            </li>
+            <li>
+                <h3>What is the primary purpose of banner grabbing?</h3>
+                <input type="radio" name="q3" value="a"> To identify the server's IP address<br>
+                <input type="radio" name="q3" value="b"> To find the software versions<br>
+                <input type="radio" name="q3" value="c"> To perform port scanning<br>
+                <input type="radio" name="q3" value="d"> To explore WordPress vulnerabilities<br>
+            </li>
+            <li>
+                <h3>Which command is used to view the present working directory in Linux?</h3>
+                <input type="radio" name="q4" value="a"> ls<br>
+                <input type="radio" name="q4" value="b"> pwd<br>
+                <input type="radio" name="q4" value="c"> cd<br>
+                <input type="radio" name="q4" value="d"> mkdir<br>
+            </li>
+            <li>
+                <h3>What does the command "uname -r" do in Linux?</h3>
+                <input type="radio" name="q5" value="a"> Shows the present working directory<br>
+                <input type="radio" name="q5" value="b"> Displays the kernel release version<br>
+                <input type="radio" name="q5" value="c"> Shows manual page for a command<br>
+                <input type="radio" name="q5" value="d"> Searches for files containing passwords<br>
+            </li>
+            <li>
+                <h3>Which option is used to show the status of all running services in Linux?</h3>
+                <input type="radio" name="q6" value="a"> -s<br>
+                <input type="radio" name="q6" value="b"> -r<br>
+                <input type="radio" name="q6" value="c"> -a<br>
+                <input type="radio" name="q6" value="d"> -status<br>
+            </li>
+            <li>
+                <h3>What is the command used to compile a C program?</h3>
+                <input type="radio" name="q7" value="a"> gcc<br>
+                <input type="radio" name="q7" value="b"> make<br>
+                <input type="radio" name="q7" value="c"> clang<br>
+                <input type="radio" name="q7" value="d"> cc<br>
+            </li>
+            <li>
+                <h3>What does the command "strings" do?</h3>
+                <input type="radio" name="q8" value="a"> Displays manual page for a command<br>
+                <input type="radio" name="q8" value="b"> Searches for files containing passwords<br>
+                <input type="radio" name="q8" value="c"> Lists printable strings in files<br>
+                <input type="radio" name="q8" value="d"> Compiles C programs<br>
+            </li>
+            <li>
+                <h3>What is the primary function of a firewall?</h3>
+                <input type="radio" name="q9" value="a"> Protects against viruses<br>
+                <input type="radio" name="q9" value="b"> Monitors network traffic<br>
+                <input type="radio" name="q9" value="c"> Manages user accounts<br>
+                <input type="radio" name="q9" value="d"> Prevents unauthorized access<br>
+            </li>
+            <li>
+                <h3>Which command is used to view the contents of a file in Linux?</h3>
+                <input type="radio" name="q10" value="a"> cat<br>
+                <input type="radio" name="q10" value="b"> grep<br>
+                <input type="radio" name="q10" value="c"> chmod<br>
+                <input type="radio" name="q10" value="d"> ls<br>
+            </li>
+        </ol>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var answers = [];
+            answers.push(document.querySelector('input[name="q1"]:checked').value);
+            answers.push(document.querySelector('input[name="q2"]:checked').value);
+            answers.push(document.querySelector('input[name="q3"]:checked').value);
+            answers.push(document.querySelector('input[name="q4"]:checked').value);
+            answers.push(document.querySelector('input[name="q5"]:checked').value);
+            answers.push(document.querySelector('input[name="q6"]:checked').value);
+            answers.push(document.querySelector('input[name="q7"]:checked').value);
+            answers.push(document.querySelector('input[name="q8"]:checked').value);
+            answers.push(document.querySelector('input[name="q9"]:checked').value);
+            answers.push(document.querySelector('input[name="q10"]:checked').value);
+
+            var correctAnswers = ['b', 'c', 'b', 'b', 'b', 'a', 'a', 'c', 'd', 'a']; // Example correct answers for the questions
+            var score = 0;
+            for (var i = 0; i < correctAnswers.length; i++) {
+                if (answers[i] === correctAnswers[i]) {
+                    score++;
+                }
+            }
+            alert('You scored ' + score + ' out of ' + correctAnswers.length);
+        });
+    </script>
+</body>
+</html>
